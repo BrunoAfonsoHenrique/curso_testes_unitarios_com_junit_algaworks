@@ -2,7 +2,7 @@ package com.algaworks.junit.utilidade;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 
 class SaudacaoUtilTest {
@@ -12,7 +12,7 @@ class SaudacaoUtilTest {
         String mensagem = "Bom dia";
         String saudacao = SaudacaoUtil.saudar(9);
 
-        assertEquals(saudacao, mensagem);
+        assertEquals(saudacao, mensagem, "Saudacao incorreta");
     }
 
     @Test
@@ -28,8 +28,22 @@ class SaudacaoUtilTest {
         String mensagem = "Boa noite";
         String saudacao = SaudacaoUtil.saudar(19);
 
-        assertEquals(saudacao, mensagem,"Hora invalida");
+        assertEquals(saudacao, mensagem);
     }
+
+    @Test
+    void deveLancaException() {
+        IllegalArgumentException illegalArgumentException = assertThrows(IllegalArgumentException.class,
+                () -> SaudacaoUtil.saudar(-10));
+
+        assertEquals("Hora inválida", illegalArgumentException.getMessage());
+    }
+
+    @Test
+    void naoDeveLancarException() {
+        assertDoesNotThrow(() -> SaudacaoUtil.saudar(0));
+    }
+
 
 
 

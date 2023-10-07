@@ -1,12 +1,15 @@
 package com.algaworks.junit.utilidade;
 
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.DisplayNameGeneration;
+import org.junit.jupiter.api.DisplayNameGenerator;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.function.Executable;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@DisplayName("Testes unitarios Saudacao") // Adiciona descrição no nome dos Testes para melhor organiza-los
+//@DisplayName("Testes unitarios Saudacao") // Adiciona descrição no nome dos Testes para melhor organiza-los
+@DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
 class SaudacaoUtilTest {
 
     @Test
@@ -55,7 +58,7 @@ class SaudacaoUtilTest {
     }
 
     @Test
-    void deveLancaException() {
+    void dado_uma_hora_invalida_quando_saudar_entao_nao_deve_lancar_exception() {
         int horaInvalida = -10;
 
         Executable chamadaDeMetodoValida = () -> SaudacaoUtil.saudar(horaInvalida);

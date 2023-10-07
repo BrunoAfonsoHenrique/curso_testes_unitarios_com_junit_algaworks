@@ -1,14 +1,16 @@
 package com.algaworks.junit.utilidade;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.function.Executable;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-
+@DisplayName("Testes unitarios Saudacao") // Adiciona descrição no nome dos Testes para melhor organiza-los
 class SaudacaoUtilTest {
 
     @Test
+    @DisplayName("Deve saldar com Bom Dia")
     void saudarBomDiaTest() {
         // Arrange -> Preparação do cenário: Variaveis que temos que declarar
         String mensagem = "Bom dia";

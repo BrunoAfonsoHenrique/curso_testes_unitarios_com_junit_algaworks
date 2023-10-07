@@ -1,0 +1,2 @@
+Asserções agrupadas - Se você tem 2 asserções em um método se a primeira falhar as outras não serão executadas.
+Ajuda a melhorar a rastreabilidade do problema.

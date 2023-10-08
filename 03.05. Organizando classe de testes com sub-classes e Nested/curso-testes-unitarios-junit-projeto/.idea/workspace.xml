@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fbea0386-6c8a-4d6c-b2b4-a8f3e8e755f5" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2WRIcEHohV8IQjWr02HD9X3HB4x" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "03-Organizando-testes-unitarios",
+    "last_opened_file_path": "C:/Users/Bruno/Documents/curso_testes_unitarios_com_junit_algaworks/03.06- Preparando o cenario de testes com BeforeEach e BeforeAll/curso-testes-unitarios-junit-projeto"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.ContaBancariaTest">
+    <configuration name="ContaBancariaTest$Saque" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junit-tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.algaworks.junit.utilidade.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.algaworks.junit.utilidade.ContaBancariaTest" />
+      <option name="MAIN_CLASS_NAME" value="com.algaworks.junit.utilidade.ContaBancariaTest$Saque" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContaBancariaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junit-tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.algaworks.junit.utilidade.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.algaworks.junit.utilidade" />
+      <option name="MAIN_CLASS_NAME" value="com.algaworks.junit.utilidade.ContaBancariaTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContaBancariaTest.deveLancarExcecaoSaldoNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junit-tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.algaworks.junit.utilidade.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.algaworks.junit.utilidade" />
+      <option name="MAIN_CLASS_NAME" value="com.algaworks.junit.utilidade.ContaBancariaTest" />
+      <option name="METHOD_NAME" value="deveLancarExcecaoSaldoNull" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SaudacaoUtilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junit-tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.algaworks.junit.utilidade.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.algaworks.junit.utilidade" />
+      <option name="MAIN_CLASS_NAME" value="com.algaworks.junit.utilidade.SaudacaoUtilTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SaudacaoUtilTest.dado_uma_hora_invalida_quando_saudar_entao_nao_deve_lancar_exception" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junit-tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.algaworks.junit.utilidade.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.algaworks.junit.utilidade" />
+      <option name="MAIN_CLASS_NAME" value="com.algaworks.junit.utilidade.SaudacaoUtilTest" />
+      <option name="METHOD_NAME" value="dado_uma_hora_invalida_quando_saudar_entao_nao_deve_lancar_exception" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="curso-testes-unitarios-junit-projeto" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="curso-testes-unitarios-junit-projeto" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ContaBancariaTest" />
+        <item itemvalue="JUnit.ContaBancariaTest$Saque" />
+        <item itemvalue="JUnit.ContaBancariaTest.deveLancarExcecaoSaldoNull" />
+        <item itemvalue="JUnit.SaudacaoUtilTest" />
+        <item itemvalue="JUnit.SaudacaoUtilTest.dado_uma_hora_invalida_quando_saudar_entao_nao_deve_lancar_exception" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fbea0386-6c8a-4d6c-b2b4-a8f3e8e755f5" name="Changes" comment="" />
+      <created>1696689044107</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696689044107</updated>
+    </task>
+    <servers />
+  </component>
+</project>

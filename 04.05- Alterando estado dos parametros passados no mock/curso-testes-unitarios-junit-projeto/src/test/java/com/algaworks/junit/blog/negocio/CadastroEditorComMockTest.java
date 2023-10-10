@@ -28,12 +28,12 @@ class CadastroEditorComMockTest {
     @BeforeEach
     void beforeEach() {
         editor = new Editor(null, "Alex", "alex@email.com", BigDecimal.TEN, true);
-
-//        ArmazenamentoEditor armazenamentoEditor = Mockito.mock(ArmazenamentoEditor.class);
-//        GerenciadorEnvioEmail gerenciadorDeEmail = Mockito.mock(GerenciadorEnvioEmail.class);
-
         Mockito.when(armazenamentoEditor.salvar(editor))
-                .thenReturn(new Editor(1L, "Alex", "alex@email.com", BigDecimal.TEN, true));
+                .thenAnswer(invocacao -> {
+                    Editor editorPassado = invocacao.getArgument(0, Editor.class);
+                    editorPassado.setId(1L);
+                    return editorPassado;
+                });
         
     }
 

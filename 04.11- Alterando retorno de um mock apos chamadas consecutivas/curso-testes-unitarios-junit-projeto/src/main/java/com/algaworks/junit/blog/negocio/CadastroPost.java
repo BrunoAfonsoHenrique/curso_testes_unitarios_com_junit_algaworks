@@ -65,8 +65,7 @@ public class CadastroPost {
     }
 
     private void enviarNotificacao(Post post) {
-        Notificacao notificacao = new Notificacao(
-                OffsetDateTime.now(),
+        Notificacao notificacao = new Notificacao(OffsetDateTime.now(),
                 "Novo post criado -> " + post.getTitulo()
         );
         this.gerenciadorNotificacao.enviar(notificacao);

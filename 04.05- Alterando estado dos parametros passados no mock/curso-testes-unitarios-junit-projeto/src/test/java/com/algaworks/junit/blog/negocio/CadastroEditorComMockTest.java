@@ -34,7 +34,7 @@ class CadastroEditorComMockTest {
 
         Mockito.when(armazenamentoEditor.salvar(editor))
                 .thenReturn(new Editor(1L, "Alex", "alex@email.com", BigDecimal.TEN, true));
-
+        
     }
 
     @Test

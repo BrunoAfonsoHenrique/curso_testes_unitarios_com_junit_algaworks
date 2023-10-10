@@ -51,4 +51,21 @@ class CadastroEditorComMockTest {
         Mockito.verify(armazenamentoEditor, Mockito.times(1))
                 .salvar(Mockito.eq(editor));
     }
+
+//    @Test
+//    void Dado_um_editor_valido_quando_criar_lancar_exception_ao_salvar_entao_nao_deve_enviar_email() {
+//        //Mockito.when(armazenamentoEditor.salvar(Mockito.any())).thenThrow(new RuntimeException());
+//        Mockito.when(armazenamentoEditor.salvar(editor)).thenThrow(new RuntimeException());
+//        Assertions.assertThrows(RuntimeException.class, () -> cadastroEditor.criar(editor));
+//        Mockito.verify(gerenciadorEnvioEmail, Mockito.never()).enviarEmail(Mockito.any());
+//    }
+
+    @Test
+    void Dado_um_editor_valido_quando_criar_lancar_exception_ao_salvar_entao_nao_deve_enviar_email() {
+        Mockito.when(armazenamentoEditor.salvar(Mockito.any())).thenThrow(new RuntimeException());
+        Assertions.assertAll("Não deve enviar email, quando lançar Exception do armazenamento",
+                () -> Assertions.assertThrows(RuntimeException.class, () -> cadastroEditor.criar(editor)),
+                () -> Mockito.verify(gerenciadorEnvioEmail, Mockito.never()).enviarEmail(Mockito.any())
+        );
+    }
 }

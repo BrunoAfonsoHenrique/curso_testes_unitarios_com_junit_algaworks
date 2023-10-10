@@ -2,6 +2,7 @@ package com.algaworks.junit.blog.negocio;
 
 
 import com.algaworks.junit.blog.armazenamento.ArmazenamentoEditor;
+import com.algaworks.junit.blog.exception.RegraNegocioException;
 import com.algaworks.junit.blog.modelo.Editor;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -9,6 +10,7 @@ import org.mockito.*;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.math.BigDecimal;
+import java.util.Optional;
 
 @DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
 @ExtendWith(MockitoExtension.class) // Para funcionar os @Mock
@@ -18,7 +20,7 @@ class CadastroEditorComMockTest {
     CadastroEditor cadastroEditor;
 
     @Spy
-    Editor editor = new Editor(null, "Alex", "alex@email.com", BigDecimal.TEN, true);;
+    Editor editor = new Editor(null, "Alex", "alex@email.com", BigDecimal.TEN, true);
 
     @Mock
     ArmazenamentoEditor armazenamentoEditor;
@@ -99,5 +101,15 @@ class CadastroEditorComMockTest {
         cadastroEditor.criar(editorSpy);
         Mockito.verify(editorSpy, Mockito.atLeast(1)).getEmail();
 
+    }
+
+    @Test
+    void Dado_um_editor_com_email_existente_Quando_cadastrar_Entao_deve_lancar_exception() {
+        Mockito.when(armazenamentoEditor.encontrarPorEmail("alex@email.com"))
+                .thenReturn(Optional.empty())
+                .thenReturn(Optional.of(editor));
+        Editor editorComEmailExistente = new Editor(null, "Alex", "alex@email.com", BigDecimal.TEN, true);
+        cadastroEditor.criar(editor);
+        Assertions.assertThrows(RegraNegocioException.class, () -> cadastroEditor.criar(editorComEmailExistente));
     }
 }
